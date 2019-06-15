@@ -1,0 +1,10 @@
+{
+	"token": "",
+	"prefix": "!",
+	"defaultChannel": "robit",
+	"stdAvatar": "stdAvatar.png",
+	"quizPath": "./resources/quiz/",
+	"hostPath": "./resources/host/",
+	"defaultHost": "oliver",
+	"allCaps": true
+}

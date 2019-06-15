@@ -1,0 +1,71 @@
+{
+  "name": "Oliver",
+  "description": "The most beautiful host in the world, bar none.",
+  "imagePath": "https://i.imgur.com/3eiaA8K.png",
+  "intro": "I am Oliver, Duke Tanas.  I humbly present you with the truly resplendent quiz, %QUIZ.  Conduct yourselves with poise and elegance, and I have the utmost confidence that you shall succeed.",
+  "congrats": "I offer you my congratulations, %WINNER!  The sight of your triumphant victory sets my heart ablaze!  Such an act of perfection is deserving of my oversight.  I may commission a sculpture of %WINNER.  It would complement one of my own!",
+  "close": "And so ends this exquisite experience!  I do hope that all of you feel enlightened by what you have been through today, yes, even you, %LOSER.  I bid you all farewell-until next time, my wondrous friends!",
+  "responses": {
+    "join": [
+      "Welcome to this contest of champions, %PLAYER!",
+      "Ah, %PLAYER!  I am pleased to see you.",
+      "How remarkable!  It seems %PLAYER has joined us!"
+    ],
+    "question": [
+      "Ahem.  Let's see...",
+      "Prepare yourselves, my friends!",
+      "Now this is a truly beautiful question!",
+      "Ho ho!  This question is truly a work of art!",
+      "How fascinating!  Perhaps this is %LOSER's time to shine...",
+      "Onto our next question."
+    ],
+    "answers": [
+      "I offer you these answers.",
+      "Ho! The correct answer is hidden amongst these, like a diamond in the rough.",
+      "Perhaps you require a bit of a push, hm? Pick an answer from these:"
+    ],
+    "correct": [
+      "Beautiful!  You are quite right, %PLAYER!",
+      "What a stunning answer!  %PLAYER is correct!",
+      "Ah ha ha!  That is exactly it, %PLAYER!",
+      "Fine work, !PLAYER."
+    ],
+    "timeout": [
+      "Oh, dear.  It seems you're out of time.",
+      "Alas, we haven't all the time in the world.  Onto the next question...",
+      "Bah!  You have failed me, %WINNER.  Perhaps it is time for %LOSER to pick up the slack..."
+    ],
+    "tally": [
+      "Gaze upon the scoreboard, ladies and gentleman!",
+      "Now would be a fine time to check our scores."
+    ],
+    "points": [
+      "%WINNER leads our little troupe with %POINTS_WINNER points!",
+      "%PLAYER has earned %POINTS points.",
+      "%POINTS points belong to %PLAYER!",
+      "Fascinating-%PLAYER has %POINTS points!"
+    ],
+    "hurryup": [
+      "I advise you to hurry, ladies and gentleman!  We only have %TIME left!",
+      "%TIME! Let us not let this performance run overlong!",
+      "The clock marches ever closer-%TIME!"
+    ],
+    "kick": [
+      "Alas, %PLAYER, you are a mule among stallions.  Goodbye.",
+      "%PLAYER, you cast an unsightly shadow.  Begone!"
+    ],
+    "comment": [
+      "Incidentally, have you seen any herons about?  Ah, nevermind.",
+      "%LOSER, could you put in an ounce more effort?",
+      "Beautiful job thus far, %WINNER!  I look forward to your continued efforts."
+    ],
+    "pause": [
+      "Oh-there is an odd gentleman trespassing in my garden.  I shall return in a moment.",
+      "Let us take a breather, friends."
+    ],
+    "resume": [
+      "And our game continues!  Stay sharp, friends!",
+      "We return!"
+    ]
+  }
+}

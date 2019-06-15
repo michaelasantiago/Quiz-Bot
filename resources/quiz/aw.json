@@ -1,0 +1,136 @@
+{
+  "title": "Advance Wars Quiz",
+  "description": "A quiz on the first four Advance Wars games.",
+  "questions": [
+    {
+      "questionText": "Across this series’s every plot, which is the final clone to be fought?",
+      "answers": [
+        {
+          "answerText": "Caulder",
+          "correct": true
+        },
+        {
+          "answerText": "Andy",
+          "correct": false
+        },
+        {
+          "answerText": "Drake",
+          "correct": false
+        },
+        {
+          "answerText": "Kanbei",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1
+    },
+    {
+      "questionText": "Several COs have this odd utility, name three with a fuel-affecting ability!",
+      "answers": [
+        {
+          "answerText": "Eagle",
+          "correct": true
+        },
+        {
+          "answerText": "Drake",
+          "correct": true
+        },
+        {
+          "answerText": "Olaf",
+          "correct": true
+        },
+        {
+          "answerText": "Jess",
+          "correct": true
+        },
+        {
+          "answerText": "Greyfield",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3
+    },
+    {
+      "questionText": "Different countries, different games, which Super Power has two names? (Name both)",
+      "answers": [
+        {
+          "answerText": "Sidewinder",
+          "correct": true
+        },
+        {
+          "answerText": "Snakebite",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2
+    },
+    {
+      "questionText": "It takes a while to charge, but it’s still quite frightening, how many stars to unleash Von Bolt’s lightning?",
+      "answers": [
+        {
+          "answerText": "10",
+          "correct": true
+        },
+        {
+          "answerText": "8",
+          "correct": false
+        },
+        {
+          "answerText": "9",
+          "correct": false
+        },
+        {
+          "answerText": "7",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1
+    },
+    {
+      "questionText": "Which commander is high enough rank to command the campaign’s first War Tank?",
+      "answers": [
+        {
+          "answerText": "Penny",
+          "correct": true
+        },
+        {
+          "answerText": "Waylon",
+          "correct": false
+        },
+        {
+          "answerText": "Tabitha",
+          "correct": false
+        },
+        {
+          "answerText": "Flak",
+          "correct": false
+        },
+        {
+          "answerText": "Greyfield",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1
+    }
+  ]
+}

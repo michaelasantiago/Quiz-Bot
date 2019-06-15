@@ -1,0 +1,13 @@
+{
+    "defaultHost": "oliver",
+    "signUpDuration": 0,
+    "questionDelay": 5,
+    "answerDelay": 5,
+    "nextDelay": 5,
+    "questionDuration": 10,
+    "lateAnswerPeriod": 0,
+    "lateAnswerMult": 0,
+    "pointDelay": 5,
+    "commentFreq": 5,
+    "randomize": true
+}
