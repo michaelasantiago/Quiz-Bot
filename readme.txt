@@ -1,3 +1,8 @@
+This bot uses
+- node.js
+- discord.js            npm install discord.js
+- fast-levenshtein.js   npm install fast-levenshtein.js
+
 Admin commands
 resetAvatar         Resets the bot's avatar to the default
 
@@ -27,6 +32,8 @@ allCaps:        Whether the bot auto-capitalizes all of its output text
 Quiz Config [quizconfig.json]
 (All times are in seconds)
 defaultHost:        Host loaded on bot startup
+prefix:             Prefix to place before answers in a quiz.
+                    If set to "", all messages will be read for answers.
 signUpDuration:     Period in which users can sign up for a quiz.
                     Will be infinite (requiring manual starting)
 questionDelay:      Time between questions in the quiz.
@@ -44,6 +51,10 @@ tallyFreq:          How frequently the host automatically does point tallies (ho
                     If set to 0, automatically tallies after every question.  If set to -1, never automatically tallies.
 commentFreq:        How frequently the host makes random comments (how many questions between each comment)
 randomize:          If true, randomizes question order in the quiz.
+allowWordy:         If true, allows player answers to contain the correct answer rather than requiring the entire answer, and overrides the same setting on questions.
+answerFuzz:         Amount of acceptable deviation from the answer, as a fraction.
+                    An answer is allowed if answerFuzz*answer.length > Levenshtein distance(answer, correct answer)
+stdCorrect:         Standard message to say when a player gets a question correct, if the host cannot supply an answer.  Can contain tags.
 
 Custom Messages [messages.json]
 Keys:
@@ -60,7 +71,11 @@ noAvatar:       Message to say after failing to find an avatar.
 failAvatar:     Message to say after failing to upload an avatar.
 timer:          Message to say upon starting a timer.
 timerDone:      Message to say at the end of a timer.
+quizActive:     Message to say when a user attempts to start a quiz while a quiz is already in progress.
 needHost:       Message to say when quiz is attempted to start without a host.
 quizFail:       Message to say after failing to start a quiz.
+quizNotFound:   Message to say when the given quiz file cannot be found.
 signUp:         Message to say when informing players that they can sign up for the quiz.
 quizStart:      Message to say when beginning a quiz.
+quizEnd:        Message to say after a quiz is ended.
+invalid:        Message to say upon being given an invalid command.

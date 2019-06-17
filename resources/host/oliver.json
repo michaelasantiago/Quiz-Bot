@@ -28,7 +28,7 @@
       "Beautiful!  You are quite right, %PLAYER!",
       "What a stunning answer!  %PLAYER is correct!",
       "Ah ha ha!  That is exactly it, %PLAYER!",
-      "Fine work, !PLAYER."
+      "Fine work, %PLAYER."
     ],
     "timeout": [
       "Oh, dear.  It seems you're out of time.",

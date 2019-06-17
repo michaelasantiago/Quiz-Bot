@@ -2,6 +2,8 @@
 const Discord = require('discord.js');
 // File System Master Object
 const FS = require('fs');
+// Levenstein Master Object (for accepting fuzzy answers)
+const leven = require('fast-levenshtein');
 // Configurable bot variables
 const config = readJson('./resources/config.json');
 // Configurable quiz variables
@@ -44,6 +46,9 @@ cur: Current channel for sending/reading
 */
 const channels = {};
 
+// Short list of number conversions for 1-10
+const numberNames = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+
 // Runs when first joining the server
 client.on('ready', () => {
 	console.log('Bot is now connected.');
@@ -52,15 +57,20 @@ client.on('ready', () => {
 	channels.quiz = channels.std;
 	// Loading default host
 	loadHost(quizConfig.defaultHost);
+	// Setting standard avatar
+	setBotAvatar(config.stdAvatar);
 	// Sending greeting message
 	sendStd(messages.greeting);
 });
 
 // Runs upon seeing a message
 client.on('message', (msg) => {
+	// Does not read own messages
+	if (msg.author.bot)
+		return;
 	curMsg = msg;
 	adminCommands(msg);
-	if (quizState === 0)
+	if (quizState === 0 || msg.channel != channels.quiz)
 	{
 		// Standard commands do not work during a quiz
 		basicCommands(msg);
@@ -95,7 +105,7 @@ function basicCommands(msg)
 	{
 		// Ping
 		console.log("Received ping command.");
-		respondMsg(msg, custMsg(messages.ping));
+		respondMsg(msg, replaceTags(messages.ping));
 	}
 	else if (checkCmd(msg, "echo"))
 	{
@@ -108,7 +118,7 @@ function basicCommands(msg)
 			echoText += splitText[i]+" ";
 		// Responding with default text if extra text was not present
 		if (echoText == "")
-			echoText = custMsg(messages.ping);
+			echoText = replaceTags(messages.echo);
 		respondMsg(msg, echoText);
 	}
 	else if (checkCmd(msg, "timer"))
@@ -120,15 +130,15 @@ function basicCommands(msg)
 			timer = 10;
 		else
 			timer = parseInt(arg);
-		respondMsg(msg, custMsg(messages.timer));
-		setTimeout( () => respondMsg(msg, custMsg(messages.timerDone) ) , timer*1000);
+		respondMsg(msg, replaceTags(messages.timer));
+		setTimeout( () => respondMsg(msg, replaceTags(messages.timerDone) ) , timer*1000);
 	}
 	else if (checkCmd(msg, "host"))
 	{
 		console.log("Received host command.");
 		var args = splitMsg(msg);
 		loadHost(args[1]);
-		respondMsg(msg, custMsg(messages.host));
+		respondMsg(msg, replaceTags(messages.host));
 	}
 	else if (checkCmd(msg, "quiz"))
 	{
@@ -140,13 +150,13 @@ function basicCommands(msg)
 			// Cannot start quiz without a host
 			if (host === null)
 			{
-				respondMsg(msg, custMsg(messages.needHost));
+				respondMsg(msg, replaceTags(messages.needHost));
 				throw ("Cannot start quiz: need host");
 			}
 			// Cannot start quiz if quiz is already in progress
 			if (quizState != 0)
 			{
-				respondMsg(msg, custMsg(messages.quizActive) );
+				respondMsg(msg, replaceTags(messages.quizActive) );
 				throw ("Cannot start quiz; quiz already in progress.");
 			}
 			var path = config.quizPath+args[1]+".json";
@@ -155,9 +165,11 @@ function basicCommands(msg)
 				quiz = readJson(path);
 			else
 			{
-				respondMsg(msg, custMsg(messages.quizNotFound));
+				respondMsg(msg, replaceTags(messages.quizNotFound));
 				throw ("Cannot start quiz; quiz file not found.");
 			}
+			// Setting avatar to quiz host avatar
+			setBotAvatar(host.imagePath);
 			// Setting quiz channel to the one the request was made on
 			channels.quiz = msg.channel;
 			if (args.includes("-open") || quizConfig.signUpDuration <= 0)
@@ -168,9 +180,9 @@ function basicCommands(msg)
 			else
 			{
 				// Opening quiz signups
-				quizState = 1;
+				setQuizState(1);
 				timer = quizConfig.signUpDuration;
-				respondMsg(msg, custMsg(messages.signUp) );
+				respondMsg(msg, replaceTags(messages.signUp) );
 				setTimeout(startQuiz, timer*1000);
 			}
 		}
@@ -193,6 +205,11 @@ function quizCommands(msg)
 		if (quizState === 1)
 			startQuiz();
 	}
+	// Answering
+	if (quizState == 3 || quizState == 4)
+	{
+		answerQuestion(msg);
+	}
 }
 
 
@@ -203,8 +220,9 @@ cmd: Command name as string
 */
 function checkCmd(msg, cmd)
 {
-	var msgCmd = splitMsg(msg);
-	return (msgCmd[0] === (config.prefix+cmd));
+	var msgCmd = splitMsg(msg)[0];
+	msgCmd = msgCmd.toLowerCase();
+	return (msgCmd === (config.prefix+cmd));
 }
 
 
@@ -216,27 +234,128 @@ function splitMsg(msg)
 	return msg.content.split(' ');
 }
 
+/* Determines if a message answers the current question and awards points
+msg:  Message containing potential answer
+*/
+
+function answerQuestion(msg)
+{
+	// Answer begins with valid prefix (unnecessary if prefix is "" or null)
+	if (!quizConfig.prefix || msg.content.startsWith(quizConfig.prefix))
+	{
+		var playerAns = msg.content;
+		// If prefix exists, remove it from the start of the string
+		if (quizConfig.prefix)
+		{
+			playerAns = playerAns.substring(quizConfig.prefix.length, playerAns.length);
+		}
+		// Converting answer to lowercase for easier comparison
+		playerAns = playerAns.toLowerCase();
+		// Number of correct answers accumulated
+		var corrects = 0;
+		/*	This is a terrible and erroneous algorithm
+			In the event where a question requires multiple answers and answers contain other answers, this can credit extra correct answers
+		*/
+		for (var i = 0; i < correctAnswers.length; i++)
+		{
+			// Accepting a "wordy" answer if the exact answer is included in the string or if the Levenshtein distance is appropriately low
+			if (quiz.questions[questionNum].wordy || quizConfig.allowWordy)
+			{
+				if (checkAnswer(playerAns, correctAnswers[i]))
+					corrects++;
+			}
+			else
+			{
+				// Only accepting exact answers
+				if (playerAns == correctAnswers[i])
+					corrects++;
+			}
+			
+		}
+		// Enough correct answers are obtained
+		if (corrects >= quiz.questions[questionNum].requiredAnswers)
+		{
+			awardPoints = quiz.questions[questionNum].points;
+			player = msg.author;
+			console.log(points[player]);
+			// Setting new players to 0 points
+			if (points[player] == undefined)
+				points[player] = 0;
+			if (quizState == 3)
+				points[player] += awardPoints;
+			else
+				points[player] += awardPoints*quizConfig.lateAnswerMult;
+			console.log(player + " points = "+points[player]);
+			// Instantly declaring answer if lateAnswerPeriod is zero or lateAnswerMult is zero
+			if (quizConfig.lateAnswerPeriod <= 0 || lateAnswerMult <= 0)
+			{
+				declareCorrectAnswer(msg);
+				timer = quizConfig.nextDelay;
+				// Advancing to the next loop of the quiz
+				setQuizState(2);
+				setTimeout(nextQuestion, timer*1000);
+			}
+			else
+			{
+				// Beginning late answer period
+				if (quizState == 3)
+				{
+					setTimeout(nextQuestion, quizConfig.lateAnswerPeriod*2);
+					setQuizState(4);
+				}
+				// Delaying answer announcement
+				timer = quizConfig.lateAnswerPeriod;
+				setTimeout( () => declareCorrectAnswer(msg) , timer*1000);
+			}
+		}
+	}
+}
+
+/* Checks an answer against a supplied answer, returning the answer if correct
+playerAns:  The player's answer
+correctAns:  The correct answer
+*/
+function checkAnswer(playerAns, correctAns, strict = false)
+{
+	if (strict)
+	{
+		// Strict answers must be solely the correct answer
+		if (playerAns === correctAns)
+			return playerAns;
+	}
+	else if (playerAns.includes(correctAns))
+		return playerAns;
+	return false;
+	/* Allowing fuzzy answers-to be changed later
+	 ||
+	leven.get(playerAns, correctAnswers[i]) < correctAnswers[i].length*quizConfig.answerFuzz)*/
+}
+function declareCorrectAnswer(msg)
+{
+	player = msg.author;
+	quizMsgCustArr(host.responses.correct);
+}
+
 /* Loads a host, given their name
 name: Name of file without the .json extension
 */
 function loadHost(name)
 {
-	host = readJson(config.hostPath+name+".json");
-	host.answersWinner = [];
-	host.answersLoser = [];
-	host.answersNormal = [];
+	host = readJson(config.hostPath + name + ".json");
+	host.pointsWinner = [];
+	host.pointsLoser = [];
+	host.pointsNormal = [];
 	// Splitting answer responses into winner/loser/normal
-	for (var i = 0; i < host.responses.answers.length; i++)
+	for (var i = 0; i < host.responses.points.length; i++)
 	{
-		var curString = host.responses.answers[i];
+		var curString = host.responses.points[i];
 		if (curString.includes("%POINTS_WINNER"))
-			host.answersWinner.push(curString);
+			host.pointsWinner.push(curString);
 		else if (curString.includes("%POINTS_LOSER"))
-			host.answersLoser.push(curString);
+			host.pointsLoser.push(curString);
 		else
-			host.answersNormal.push(curString);
+			host.pointsNormal.push(curString);
 	}
-	setBotAvatar(host.imagePath);
 }
 
 /* Begins a quiz, ending signups */
@@ -249,22 +368,23 @@ function startQuiz()
 	if (quizConfig.randomize)
 		questions = shuffle(questions);
 	questionNum = -1;
+	quizMsg(replaceTagsQuiz(host.intro));
+	// Must start quiz by asking a question
 	canAltAction = false;
-	quizMsg(host.intro);
 	nextQuestion();
 }
 // Starting point for the quiz loop
 function nextQuestion()
 {
 	// Setting quiz to "waiting for timeout" state
-	quizState = 2;
+	setQuizState(2);
 	// Picking action
 	if (questionNum < questions.length - 1)
 	{
 		// These actions are not performed after the last question
 		if (canAltAction)
 		{
-			if (quizConfig.tallyFreq != -1 && points.length > 0 && questionNum >= 0 && (questionNum === 0 || questionNum % quizConfig.tallyFreq === 0))
+			if (quizConfig.tallyFreq != -1 && points.length > 0 && questionNum >= 0 && questionNum % quizConfig.tallyFreq === 1)
 			{
 				// Tallying points
 				canAltAction = false;
@@ -272,7 +392,7 @@ function nextQuestion()
 				setTimeout(startTally, timer*1000);
 				return;
 			}
-			else if (questionNum % quizConfig.commentFreq === 0)
+			else if (questionNum % quizConfig.commentFreq === 1)
 			{
 				// Commenting
 				canAltAction = false;
@@ -290,14 +410,16 @@ function nextQuestion()
 	{
 		// Out of questions, performing final tally
 		timer = quizConfig.nextDelay;
-		setTimeout(startTally, timer);
+		setTimeout(startTally, timer*1000);
 	}
 }
 
 /* Starts tallying points */
 function startTally()
 {
-	timer = doTally();
+	// Skips tally if quizConfig.pointDelay is negative or if there are no players in points
+	if (quizConfig.pointDelay >= 0 && Object.keys(points).length > 0)
+		timer = doTally();
 	if (questionNum < questions.length - 1)
 	{
 		// Returning to start of loop
@@ -314,24 +436,30 @@ function startTally()
 /* Performs the action of tallying (can be called separately without affecting the quiz) */
 function doTally()
 {
-	quizMsgArr(host.responses.tally);
+	quizMsgCustArr(host.responses.tally);
 	timer = quizConfig.pointDelay;
+	var playerKeys = Object.keys(points);
 	// Staggered announcements
 	if (timer > 0)
 	{
 		console.log("Performing point tally.");
-		points.forEach(function(points, player) {
-			setTimeout( () => pointsMsg(points, player), timer)
+		for (var playerKey in playerKeys)
+		{
+			console.log("we made it into the foreach at least");
+			setTimeout( () => pointsMsg(points[playerKey], playerKey), timer)
 			timer += quizConfig.pointDelay;
-		});
+		};
 	}
-	else if (timer <= 0)
+	else if (timer === 0)
 	{
 		console.log("Performing quick tally.");
 		// Condensed format for outputting points
-		points.forEach(function(points, player) {
-			quizMsg(player+"%POINTS");
-		});
+		pointStr = "| ";
+		for (var playerKey in playerKeys)
+		{
+			pointStr += playerKey + ": " + points[playerKey] + " | ";
+		}
+		quizMsg(pointStr);
 	}
 	return timer;
 }
@@ -341,20 +469,20 @@ player:  Player, as User
 */
 function pointsMsg(points, player)
 {
-	player = player;
+	this.player = player;
 	// Selecting appropriate quiz messages
-	var quizMessages = host.answersNormal;
-	if (player == getWinner() && host.answersWinner.length > 0)
-		quizMessages = host.answersWinner;
-	else if (player == getLoser() && host.answersLoser.length > 0)
-		quizMessages = host.answersLoser;
-	quizMsgArr(quizMessages);
+	var quizMessages = host.pointsNormal;
+	if (player == getWinner() && host.pointsWinner .length > 0)
+		quizMessages = host.pointsWinner ;
+	else if (player == getLoser() && host.pointsLoser.length > 0)
+		quizMessages = host.pointsLoser;
+	quizMsgCustArr(quizMessages);
 }
 
 /* Writes a random quiz comment */
 function quizComment()
 {
-	quizMsgArr(host.responses.comment)
+	quizMsgCustArr(host.responses.comment)
 	timer = quizConfig.nextDelay;
 	setTimeout(nextQuestion, timer);
 }
@@ -369,14 +497,14 @@ function startQuestion()
 	correctAnswers = [];
 	for (var i = 0, j = 0; i < answers.length; i++)
 		if (answers[i].correct)
-			correctAnswers.push(answers[i].answerText);
+			correctAnswers.push(answers[i].answerText.toLowerCase());
 	console.log(correctAnswers);
 	// Introducing question
-	quizMsgArr(host.responses.question);
+	quizMsgCustArr(host.responses.question);
 	// Sending question
 	quizMsg("[" + (questionNum + 1) + "]  " + questions[questionNum].questionText);
 	// Accepting answers state
-	state = 3;
+	setQuizState(3);
 	// Provides answers if answerDelay is configured appropriately
 	if (quizConfig.answerDelay < quizConfig.questionDuration && quizConfig.answerDelay != -1)
 	{
@@ -392,7 +520,7 @@ function startQuestion()
 function giveAnswers(num)
 {
 	// Stops if question has already been answered or advanced
-	if (questionNum != num || state != 3)
+	if (questionNum != num || quizState != 3)
 		return;
 	var answers = quiz.questions[num].answers;
 	// Stops if there are no distractor answers to provide
@@ -400,29 +528,34 @@ function giveAnswers(num)
 		return;
 	console.log(correctAnswers.length +" = " + answers.length);
 	console.log(correctAnswers);
-	quizMsgArr(host.responses.answers);
+	quizMsgCustArr(host.responses.answers);
+	var answerStr = "";
 	for (var i = 0; i < answers.length; i++)
-		quizMsg(answers[i].answerText);
+		answerStr += answers[i].answerText + "\n";
+	quizMsg(answerStr);
 }
 
 // Ends a question, failing if the question has already been answered
 function endQuestion(num)
 {
 	// Fails if question has already been answered or advanced
-	if (questionNum != num || state != 3)
+	if (questionNum != num || quizState != 3)
 		return;
-	quizMsgArr(host.responses.timeout);
-	state = 2;
+	quizMsgCustArr(host.responses.timeout);
+	setQuizState(2);
 	nextQuestion();
 }
 
 // Ends the quiz
 function endQuiz()
 {
-	quizMsg(host.congrats);
-	quizMsg(host.close);
-	quizState = 0;
+	quizMsg(replaceTagsQuiz(host.congrats));
+	quizMsg(replaceTagsQuiz(host.close));
+	setQuizState(0);
 	quiz = null;
+	quizMsg(messages.quizEnd);
+	// Resetting to standard avatar
+	setBotAvatar(config.stdAvatar);
 }
 /* Sets the bot's avatar to the specified image path in response to a message
 msg: Message requesting change (necessary for response)
@@ -434,10 +567,10 @@ function setBotAvatarManual(msg, avatar)
 			var path = "./resources/images/"+avatar;
 			// Setting the avatar
 			var request = client.user.setAvatar(path);
-			request.then( () => respondMsg(msg, custMsg(messages.setAvatar)), () => respondMsg(msg, failAvatar) );
+			request.then( () => respondMsg(msg, replaceTags(messages.setAvatar)), () => respondMsg(msg, replaceTags(messages.failAvatar)));
 	} catch(err) {
 		console.log(err);
-		respondMsg(msg, custMsg(messages.noAvatar))
+		respondMsg(msg, replaceTags(messages.noAvatar))
 	}
 }
 /* Sets the bot's avatar to the specified image path
@@ -463,36 +596,74 @@ function setBotAvatar(avatar)
 		console.log(err);
 	}
 }
-/* Sends text to the quiz channel, replacing tags with their variables
+/* Sends text to the quiz channel
 sendText: Text to send
 */
 function quizMsg(sendText)
 {
 	// Customizes sendText by replacing tags with variables.
-	if (player != null)
-		sendText = sendText.replace("%PLAYER", player);
-	sendText = sendText.replace("%WINNER", getWinner());
-	sendText = sendText.replace("%LOSER", getLoser());
-	sendText = sendText.replace("%QUIZ", quiz.title);
-	sendText = sendText.replace("%SUBJECT", quiz.subject);
-	sendText = sendText.replace("%TIME", timer + " seconds");
-	if (player in points)
-		sendText = sendText.replace("%POINTS", points[player]);
-	if (getWinner() in points)
-		sendText = sendText.replace("%POINTS_WINNER", points[getWinner()]);
-	if (getLoser() in points)
-		sendText = sendText.replace("%POINTS_LOSER", points[getLoser()]);
 	sendMsg(channels.quiz, sendText);
 }
 /* Accepts an array of potential messages, picks one randomly, and sends it through quizMsg
 quizMessages: Array of messages
 */
-function quizMsgArr(quizMessages)
+function quizMsgCustArr(quizMessages)
 {
-	var i = Math.floor(Math.random()*quizMessages.length);
-	quizMsg(quizMessages[i]);
-	return quizMessages[i];
+	// Selecting one valid string at random
+	randMessages = shuffle(quizMessages);
+	var text;
+	for (var i = 0; i < randMessages.length; i++)
+	{
+		// Searching for a string that does not contain undefined keywords
+		text = replaceTagsQuiz(randMessages[i]);
+		if (text !== null)
+			break;
+	}
+	if (text !== null)
+		quizMsg(text);
+	else
+		return false;
+	return true;
 }
+/* Swaps out keys in a quiz message with their appropriate variables and returns the resulting string.
+If a key is present and cannot be swapped, rejects string and returns null
+text: Base string to create modified string from
+*/
+function replaceTagsQuiz(text)
+{
+	newText = text;
+	newText = validateAndReplace(newText, "%PLAYER", player);
+	newText = validateAndReplace(newText, "%WINNER", getWinner());
+	newText = validateAndReplace(newText, "%LOSER", getLoser());
+	newText = validateAndReplace(newText, "%QUIZ", quiz.title);
+	newText = validateAndReplace(newText, "%SUBJECT", quiz.subject);
+	newText = validateAndReplace(newText, "%TIME", timer + " seconds");
+	newText = validateAndReplace(newText, "%POINTS", points[player]);
+	newText = validateAndReplace(newText, "%POINTS_WINNER", points[getWinner()]);
+	newText = validateAndReplace(newText, "%POINTS_LOSER", points[getLoser()]);
+	return newText;
+}
+
+/* Swaps out quiz key in the text for newStr and returns modified string.  If key is present and cannot be swapped, returns null
+text:	Base string to create modified string from
+key:	substring to replace
+newStr:	string with which to replace substring
+*/
+function validateAndReplace(text, key, newStr)
+{
+	// Cannot modify null or empty text
+	if (!text)
+		return null;
+	if (text.includes(key))
+	{
+		if (!newStr)
+			return null;
+		else
+			return text.replace(key, newStr);
+	}
+	return text;
+}
+
 /* Returns the current winning player as a User */
 function getWinner()
 {
@@ -523,12 +694,13 @@ function getLoser()
 }
 function sendMsg(channel, sendText)
 {
-	if (sendText === undefined || sendText === "")
+	if (sendText === undefined || sendText === "" || sendText === null)
 	{
 		console.log("Error: No message to send.")
 		return;
 	}
-	if (config.allCaps)
+	// Converting text to all caps if specified in config (Does not take effect during quiz)
+	if (config.allCaps && quiz === null)
 		sendText = sendText.toUpperCase();
 	console.log("Sending message: \n"+sendText);
 	if (channel === null)
@@ -561,9 +733,9 @@ function respondMsg(msg, sendText)
 }
 
 /* Returns copy of the input string with keys replaced by variables
-msg: message to replace the strings in
+text: message to replace the strings in
 */
-function custMsg(text)
+function replaceTags(text)
 {
 	var newText = text;
 	if (curMsg !== null)
@@ -574,6 +746,18 @@ function custMsg(text)
 	if (host !== null)
 		newText = newText.replace("%HOST", host.name);
 	return newText;
+}
+
+/* Sets the quiz state.  See beginning of file for state descriptions
+state: state to change, int
+*/
+function setQuizState(newState)
+{
+	// No need to change state if already in the current state
+	if (newState === quizState)
+		return;
+	console.log(`Changing quiz state from ${quizState} to ${newState}.`);
+	quizState = newState;
 }
 
 /* Returns the channel with the specified name from the channel list
@@ -595,6 +779,9 @@ arr: array to shuffle
 function shuffle(arr)
 {
 	var i, j, temp;
+	// Does not work on nulls
+	if (arr === null)
+		return null;
 	for (i = arr.length - 1; i > 0; i--)
 	{
 		j = Math.floor(Math.random() * (i + 1))

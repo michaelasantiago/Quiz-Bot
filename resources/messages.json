@@ -1,7 +1,7 @@
 {
     "greeting":     "Beep boop.  We are online.",
     "ping":         "Bzzt!  Hello %USER!",
-    "echo":         "I'm sorry, did you say something?",
+    "echo":         "Sorry, did you say something %USER?",
     "setAvatar":    "Avatar has been changed.",
     "noAvatar":     "Sorry, I can't find this avatar.",
     "failAvatar":   "Sorry, I can't change my avatar right now.",
@@ -14,6 +14,6 @@
     "signUp":       "Sign up for this quiz by saying \"%PREFIXjoin\".  Quiz will begin in %TIMER.",
     "host":         "Host set to %HOST.",
     "quizStart":    "Beginning quiz now!  Allow me to introduce your host...",
-    "invalid":      "Invalid command.",
-    "quizEnd":      "The quiz has ended.  Resuming normal operations."
+    "quizEnd":      "The quiz has ended.  Resuming normal operations.",
+	"invalid":      "Invalid command."
 }
