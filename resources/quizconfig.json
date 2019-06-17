@@ -8,7 +8,7 @@
     "questionDuration": 10,
     "lateAnswerPeriod": 0,
     "lateAnswerMult": 0,
-    "pointDelay": 0,
+    "pointDelay": 1,
     "tallyFreq": 2,
     "commentFreq": 5,
     "randomize": true,

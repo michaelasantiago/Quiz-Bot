@@ -384,7 +384,7 @@ function nextQuestion()
 		// These actions are not performed after the last question
 		if (canAltAction)
 		{
-			if (quizConfig.tallyFreq != -1 && points.length > 0 && questionNum >= 0 && questionNum % quizConfig.tallyFreq === 1)
+			if (quizConfig.tallyFreq != -1 && Object.keys(points).length > 0 && questionNum >= 0 && (questionNum % quizConfig.tallyFreq === 1))
 			{
 				// Tallying points
 				canAltAction = false;
@@ -445,10 +445,9 @@ function doTally()
 		console.log("Performing point tally.");
 		for (var playerKey in playerKeys)
 		{
-			console.log("we made it into the foreach at least");
 			setTimeout( () => pointsMsg(points[playerKey], playerKey), timer)
 			timer += quizConfig.pointDelay;
-		};
+		}
 	}
 	else if (timer === 0)
 	{
@@ -668,28 +667,30 @@ function validateAndReplace(text, key, newStr)
 function getWinner()
 {
 	var high = 0, topPlayer;
-	points.forEach(function(points, player)
+	var playerKeys = Object.keys(points);
+	for (var playerKey in playerKeys)
 	{
-		if (points >= high)
+		if (points[playerKey] >= high)
 		{
-			high = points;
-			topPlayer = player;
+			high = points[playerKey];
+			topPlayer = playerKey;
 		}
-	});
+	}
 	return topPlayer;
 }
 /* Returns the current losing player as a User */
 function getLoser()
 {
 	var low = null, botPlayer;
-	points.forEach(function(points, player)
+	var playerKeys = Object.keys(points)
+	for (var playerKey in playerKeys)
 	{
-		if (low === null || points < low)
+		if (low === null || points[playerKey] < low)
 		{
-			low = points;
-			botPlayer = player;
+			low = points[playerKey];
+			botPlayer = playerKey;
 		}
-	});
+	};
 	return botPlayer;
 }
 function sendMsg(channel, sendText)
