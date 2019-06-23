@@ -1,0 +1,27 @@
+{
+  "name": "Gruntilda",
+  "description": "A beautful witch with a talent for rhyme, she's ready to quiz you any old time.",
+  "imagePath": "https://i.imgur.com/IhYs1ag.png",
+  "intro": null,
+  "congrats": null,
+  "close": null,
+  "responses": {
+    "intro": [
+      "Welcome one and welcome all, to all contestants, hear my call!"
+    ],
+    "join": [],
+    "question": [],
+    "answers": [],
+    "correct": [],
+    "timeout": [],
+    "tally": [],
+    "points": [],
+    "hurryup": [],
+    "kick": [],
+    "comment": [],
+    "pause": [],
+    "resume": [],
+    "congrats": [],
+    "close": []
+  }
+}

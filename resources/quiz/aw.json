@@ -1,6 +1,7 @@
 {
   "title": "Advance Wars Quiz",
-  "description": "A quiz on the first four Advance Wars games.",
+  "description": "A quiz on the four Advance Wars games.",
+  "subject": "Advance Wars",
   "questions": [
     {
       "questionText": "Across this series’s every plot, which is the final clone to be fought?",
@@ -26,7 +27,9 @@
       "wordy": false,
       "musicPath": "",
       "points": 1,
-      "requiredAnswers": 1
+      "requiredAnswers": 1,
+      "number": 1,
+      "NumberedQuestionText": "[1] Across this series’s every plot, which is the final clone to be fought?"
     },
     {
       "questionText": "Several COs have this odd utility, name three with a fuel-affecting ability!",
@@ -56,10 +59,12 @@
       "wordy": false,
       "musicPath": "",
       "points": 1,
-      "requiredAnswers": 3
+      "requiredAnswers": 3,
+      "number": 2,
+      "NumberedQuestionText": "[2] Several COs have this odd utility, name three with a fuel-affecting ability!"
     },
     {
-      "questionText": "Different countries, different games, which Super Power has two names? (Name both)",
+      "questionText": "Different countries, different games, which Super Power has two names? (Give both names)",
       "answers": [
         {
           "answerText": "Sidewinder",
@@ -74,7 +79,9 @@
       "wordy": false,
       "musicPath": "",
       "points": 1,
-      "requiredAnswers": 2
+      "requiredAnswers": 2,
+      "number": 3,
+      "NumberedQuestionText": "[3] Different countries, different games, which Super Power has two names? (Give both names)"
     },
     {
       "questionText": "It takes a while to charge, but it’s still quite frightening, how many stars to unleash Von Bolt’s lightning?",
@@ -100,7 +107,9 @@
       "wordy": false,
       "musicPath": "",
       "points": 1,
-      "requiredAnswers": 1
+      "requiredAnswers": 1,
+      "number": 4,
+      "NumberedQuestionText": "[4] It takes a while to charge, but it’s still quite frightening, how many stars to unleash Von Bolt’s lightning?"
     },
     {
       "questionText": "Which commander is high enough rank to command the campaign’s first War Tank?",
@@ -130,7 +139,929 @@
       "wordy": false,
       "musicPath": "",
       "points": 1,
-      "requiredAnswers": 1
+      "requiredAnswers": 1,
+      "number": 5,
+      "NumberedQuestionText": "[5] Which commander is high enough rank to command the campaign’s first War Tank?"
+    },
+    {
+      "questionText": "Other than Sturm and the clone he produced, which AW1 CO is last introduced?",
+      "answers": [
+        {
+          "answerText": "Sonja",
+          "correct": false
+        },
+        {
+          "answerText": "Grit",
+          "correct": false
+        },
+        {
+          "answerText": "Kanbei",
+          "correct": false
+        },
+        {
+          "answerText": "Drake",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 6,
+      "NumberedQuestionText": "[6] Other than Sturm and the clone he produced, which AW1 CO is last introduced?"
+    },
+    {
+      "questionText": "Of equivalent cost but not equivalent strength, which country has COP bars of all the same length?",
+      "answers": [
+        {
+          "answerText": "Orange Star",
+          "correct": true
+        },
+        {
+          "answerText": "Blue Moon",
+          "correct": false
+        },
+        {
+          "answerText": "Yellow Comet",
+          "correct": false
+        },
+        {
+          "answerText": "Green Earth",
+          "correct": false
+        },
+        {
+          "answerText": "Black Hole",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 7,
+      "NumberedQuestionText": "[7] Of equivalent cost but not equivalent strength, which country has COP bars of all the same length?"
+    },
+    {
+      "questionText": "Find that tank and leave no city uncovered!  In which Green Earth mission is a lab map discovered?",
+      "answers": [
+        {
+          "answerText": "Sinking Feeling",
+          "correct": true
+        },
+        {
+          "answerText": "Danger X9",
+          "correct": false
+        },
+        {
+          "answerText": "Drake's Dilemma",
+          "correct": false
+        },
+        {
+          "answerText": "Two-Week Test",
+          "correct": false
+        },
+        {
+          "answerText": "Sea Fortress",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 8,
+      "NumberedQuestionText": "[8] Find that tank and leave no city uncovered!  In which Green Earth mission is a lab map discovered?"
+    },
+    {
+      "questionText": "Looks like you’ve got some decisions to make! Who goes through Green Earth for Sturm to fight Drake?",
+      "answers": [
+        {
+          "answerText": "Andy",
+          "correct": true
+        },
+        {
+          "answerText": "Max",
+          "correct": false
+        },
+        {
+          "answerText": "Sami",
+          "correct": false
+        },
+        {
+          "answerText": "Nell",
+          "correct": false
+        },
+        {
+          "answerText": "Eagle",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 9,
+      "NumberedQuestionText": "[9] Looks like you’ve got some decisions to make! Who goes through Green Earth for Sturm to fight Drake?"
+    },
+    {
+      "questionText": "Only Penny has something to gain, which other CO has standard vision in rain?",
+      "answers": [
+        {
+          "answerText": "Sonja",
+          "correct": true
+        },
+        {
+          "answerText": "Drake",
+          "correct": false
+        },
+        {
+          "answerText": "Olaf",
+          "correct": false
+        },
+        {
+          "answerText": "Lin",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 10,
+      "NumberedQuestionText": "[10] Only Penny has something to gain, which other CO has standard vision in rain?"
+    },
+    {
+      "questionText": "Their firepower did not regress, who has the weakest Artillery in DS?",
+      "answers": [
+        {
+          "answerText": "Colin",
+          "correct": true
+        },
+        {
+          "answerText": "Max",
+          "correct": false
+        },
+        {
+          "answerText": "Sami",
+          "correct": false
+        },
+        {
+          "answerText": "Sensei",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 11,
+      "NumberedQuestionText": "[11] Their firepower did not regress, who has the weakest Artillery in DS?"
+    },
+    {
+      "questionText": "A problem of which they were eventually free, which CO had the weakest Infantry?",
+      "answers": [
+        {
+          "answerText": "Grit",
+          "correct": true
+        },
+        {
+          "answerText": "Colin",
+          "correct": false
+        },
+        {
+          "answerText": "Flak",
+          "correct": false
+        },
+        {
+          "answerText": "Tabitha",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 12,
+      "NumberedQuestionText": "[12] A problem of which they were eventually free, which CO had the weakest Infantry?"
+    },
+    {
+      "questionText": "Teaming up in their darkest hour, which pair of COs has the weakest Tag Power?",
+      "answers": [
+        {
+          "answerText": "Rachel",
+          "correct": true
+        },
+        {
+          "answerText": "Koal",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 13,
+      "NumberedQuestionText": "[13] Teaming up in their darkest hour, which pair of COs has the weakest Tag Power?"
+    },
+    {
+      "questionText": "A member of the Wars World team, who has music but no \"Theme\"?",
+      "answers": [
+        {
+          "answerText": "Andy",
+          "correct": true
+        },
+        {
+          "answerText": "The Beast",
+          "correct": false
+        },
+        {
+          "answerText": "Hachi",
+          "correct": false
+        },
+        {
+          "answerText": "Von Bolt",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 14,
+      "NumberedQuestionText": "[14] A member of the Wars World team, who has music but no \"Theme\"?"
+    },
+    {
+      "questionText": "The Deathray charges not too fast, on which Day does the Ray first blast?",
+      "answers": [
+        {
+          "answerText": "7",
+          "correct": true
+        },
+        {
+          "answerText": "6",
+          "correct": false
+        },
+        {
+          "answerText": "5",
+          "correct": false
+        },
+        {
+          "answerText": "4",
+          "correct": false
+        },
+        {
+          "answerText": "8",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 15,
+      "NumberedQuestionText": "[15] The Deathray charges not too fast, on which Day does the Ray first blast?"
+    },
+    {
+      "questionText": "Making units ultra tough, what’s the name of Caulder’s buff?",
+      "answers": [
+        {
+          "answerText": "Supreme Boost",
+          "correct": true
+        },
+        {
+          "answerText": "Science Multiplier",
+          "correct": false
+        },
+        {
+          "answerText": "Ultimate Boost",
+          "correct": false
+        },
+        {
+          "answerText": "Advanced Boost",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 16,
+      "NumberedQuestionText": "[16] Making units ultra tough, what’s the name of Caulder’s buff?"
+    },
+    {
+      "questionText": "Completely defenseless against those that stand, name three units that hit air but not land!",
+      "answers": [
+        {
+          "answerText": "Missiles",
+          "correct": true
+        },
+        {
+          "answerText": "Cruiser",
+          "correct": true
+        },
+        {
+          "answerText": "Fighter",
+          "correct": true
+        },
+        {
+          "answerText": "Carrier",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 17,
+      "NumberedQuestionText": "[17] Completely defenseless against those that stand, name three units that hit air but not land!"
+    },
+    {
+      "questionText": "Lash's powers both cost just the same, as which other CO in the game?",
+      "answers": [
+        {
+          "answerText": "Drake",
+          "correct": true
+        },
+        {
+          "answerText": "Hawke",
+          "correct": false
+        },
+        {
+          "answerText": "Colin",
+          "correct": false
+        },
+        {
+          "answerText": "Sonja",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 18,
+      "NumberedQuestionText": "[18] Lash's powers both cost just the same, as which other CO in the game?"
+    },
+    {
+      "questionText": "The carrier's cost is quite insane, but how much is a sole Seaplane?",
+      "answers": [
+        {
+          "answerText": "15000",
+          "correct": true
+        },
+        {
+          "answerText": "15k",
+          "correct": true
+        },
+        {
+          "answerText": "15",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 19,
+      "NumberedQuestionText": "[19] The carrier's cost is quite insane, but how much is a sole Seaplane?"
+    },
+    {
+      "questionText": "Which Skill equipped gives you a boost when weather has firing range reduced?",
+      "answers": [
+        {
+          "answerText": "Sand Scorpion",
+          "correct": true
+        },
+        {
+          "answerText": "Soul of Grit",
+          "correct": false
+        },
+        {
+          "answerText": "Ranger",
+          "correct": false
+        },
+        {
+          "answerText": "High and Dry",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 20,
+      "NumberedQuestionText": "[20] Which Skill equipped gives you a boost when weather has firing range reduced?"
+    },
+    {
+      "questionText": "When 999's your highest score, which commanders defend the Rivers Four?",
+      "answers": [
+        {
+          "answerText": "Grit",
+          "correct": true
+        },
+        {
+          "answerText": "Max",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 21,
+      "NumberedQuestionText": "[21] When 999's your highest score, which commanders defend the Rivers Four?"
+    },
+    {
+      "questionText": "A collection of ruffians sour and dour, name four COs with no CO Power!",
+      "answers": [
+        {
+          "answerText": "Forsythe",
+          "correct": true
+        },
+        {
+          "answerText": "Caulder",
+          "correct": true
+        },
+        {
+          "answerText": "Von Bolt",
+          "correct": true
+        },
+        {
+          "answerText": "The Beast",
+          "correct": true
+        },
+        {
+          "answerText": "Fanatic",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 22,
+      "NumberedQuestionText": "[22] A collection of ruffians sour and dour, name four COs with no CO Power!"
+    },
+    {
+      "questionText": "Which unit, whenever it can fire, always has base damage of 100 or higher?",
+      "answers": [
+        {
+          "answerText": "Missiles",
+          "correct": true
+        },
+        {
+          "answerText": "Carrier",
+          "correct": true
+        },
+        {
+          "answerText": "Fighter",
+          "correct": false
+        },
+        {
+          "answerText": "Cruiser",
+          "correct": false
+        },
+        {
+          "answerText": "Megatank",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 23,
+      "NumberedQuestionText": "[23] Which unit, whenever it can fire, always has base damage of 100 or higher?"
+    },
+    {
+      "questionText": "Test your wits and wrack your brain!  How many coins for Advance Campaign?",
+      "answers": [
+        {
+          "answerText": "1",
+          "correct": true
+        },
+        {
+          "answerText": "100",
+          "correct": false
+        },
+        {
+          "answerText": "300",
+          "correct": false
+        },
+        {
+          "answerText": "999",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 24,
+      "NumberedQuestionText": "[24] Test your wits and wrack your brain!  How many coins for Advance Campaign?"
+    },
+    {
+      "questionText": "Loosely related to their talent, which CO is described as “gallant”?",
+      "answers": [
+        {
+          "answerText": "Jess",
+          "correct": true
+        },
+        {
+          "answerText": "Javier",
+          "correct": false
+        },
+        {
+          "answerText": "Kanbei",
+          "correct": false
+        },
+        {
+          "answerText": "Eagle",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 25,
+      "NumberedQuestionText": "[25] Loosely related to their talent, which CO is described as “gallant”?"
+    },
+    {
+      "questionText": "An odd little thing that breaks with convention, which Black Hole unit was not Lash’s invention?",
+      "answers": [
+        {
+          "answerText": "Oozium",
+          "correct": true
+        },
+        {
+          "answerText": "Black Boat",
+          "correct": false
+        },
+        {
+          "answerText": "Piperunner",
+          "correct": false
+        },
+        {
+          "answerText": "Neotank",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 26,
+      "NumberedQuestionText": "[26] An odd little thing that breaks with convention, which Black Hole unit was not Lash’s invention?"
+    },
+    {
+      "questionText": "They start the battle fully-stocked, who uses their Power before yours is unlocked?",
+      "answers": [
+        {
+          "answerText": "Olaf",
+          "correct": true
+        },
+        {
+          "answerText": "Flak",
+          "correct": false
+        },
+        {
+          "answerText": "Lash",
+          "correct": false
+        },
+        {
+          "answerText": "Jugger",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 27,
+      "NumberedQuestionText": "[27] They start the battle fully-stocked, who uses their Power before yours is unlocked?"
+    },
+    {
+      "questionText": "Between Days of Ruin and Dark Conflict some names were exchanged, but which character's name remained unchanged?",
+      "answers": [
+        {
+          "answerText": "Lin",
+          "correct": true
+        },
+        {
+          "answerText": "Sigismundo",
+          "correct": false
+        },
+        {
+          "answerText": "The Beast",
+          "correct": false
+        },
+        {
+          "answerText": "Davis",
+          "correct": false
+        },
+        {
+          "answerText": "Dr Morris",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 28,
+      "NumberedQuestionText": "[28] Between Days of Ruin and Dark Conflict some names were exchanged, but which character's name remained unchanged?"
+    },
+    {
+      "questionText": "A cost occurring more than thrice, name three units with identical price!",
+      "answers": [
+        {
+          "answerText": "Sub",
+          "correct": true
+        },
+        {
+          "answerText": "Fighter",
+          "correct": true
+        },
+        {
+          "answerText": "Bomber",
+          "correct": true
+        },
+        {
+          "answerText": "Piperunner",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 29,
+      "NumberedQuestionText": "[29] A cost occurring more than thrice, name three units with identical price!"
+    },
+    {
+      "questionText": "Which track on the list begins to play when Firestorm is on the way?",
+      "answers": [
+        {
+          "answerText": "Stormy Times",
+          "correct": true
+        },
+        {
+          "answerText": "Von Bolt's Fury",
+          "correct": false
+        },
+        {
+          "answerText": "Madman's Reign",
+          "correct": false
+        },
+        {
+          "answerText": "Days of Ruin",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 30,
+      "NumberedQuestionText": "[30] Which track on the list begins to play when Firestorm is on the way?"
+    },
+    {
+      "questionText": "Study this image, its every tile, which War Room map contains this isle?  https://i.imgur.com/Wb0FXPV.png",
+      "answers": [
+        {
+          "answerText": "Toil Ferry",
+          "correct": true
+        },
+        {
+          "answerText": "Egg Islands",
+          "correct": false
+        },
+        {
+          "answerText": "Rivers Four",
+          "correct": false
+        },
+        {
+          "answerText": "Great Sea Battle",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 31,
+      "NumberedQuestionText": "[31] Study this image, its every tile, which War Room map contains this isle?  https://i.imgur.com/Wb0FXPV.png"
+    },
+    {
+      "questionText": "Study this image, its every tile, which War Room map contains this isle?  https://i.imgur.com/ljZAXeD.png",
+      "answers": [
+        {
+          "answerText": "Egg Islands",
+          "correct": true
+        },
+        {
+          "answerText": "Kita Strait",
+          "correct": false
+        },
+        {
+          "answerText": "Pivot Isle",
+          "correct": false
+        },
+        {
+          "answerText": "Mial's Hope",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 32,
+      "NumberedQuestionText": "[32] Study this image, its every tile, which War Room map contains this isle?  https://i.imgur.com/ljZAXeD.png"
+    },
+    {
+      "questionText": "Study this image, its every tile, which War Room map has this style?  https://i.imgur.com/4L9CvID.png",
+      "answers": [
+        {
+          "answerText": "The Trident",
+          "correct": true
+        },
+        {
+          "answerText": "Point Stormy",
+          "correct": false
+        },
+        {
+          "answerText": "Duo Falls",
+          "correct": false
+        },
+        {
+          "answerText": "Bounty River",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 33,
+      "NumberedQuestionText": "[33] Study this image, its every tile, which War Room map has this style?  https://i.imgur.com/4L9CvID.png"
+    },
+    {
+      "questionText": "In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/elKJt7h.png",
+      "answers": [
+        {
+          "answerText": "Rocket",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 34,
+      "NumberedQuestionText": "[34] In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/elKJt7h.png"
+    },
+    {
+      "questionText": "In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/s47wJMf.png",
+      "answers": [
+        {
+          "answerText": "Anti-Air",
+          "correct": true
+        },
+        {
+          "answerText": "Anti Air",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 35,
+      "NumberedQuestionText": "[35] In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/s47wJMf.png"
+    },
+    {
+      "questionText": "In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/FW4CtCt.png",
+      "answers": [
+        {
+          "answerText": "Md Tank",
+          "correct": true
+        },
+        {
+          "answerText": "Medium Tank",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 36,
+      "NumberedQuestionText": "[36] In battle scenes, did you forget, which unit has this silhouette?  https://i.imgur.com/FW4CtCt.png"
+    },
+    {
+      "questionText": "See this slice of campaign map, which two commanders fight this scrap?  https://i.imgur.com/IEjRRMN.png",
+      "answers": [
+        {
+          "answerText": "Sami",
+          "correct": true
+        },
+        {
+          "answerText": "Lash",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 37,
+      "NumberedQuestionText": "[37] See this slice of campaign map, which two commanders fight this scrap?  https://i.imgur.com/IEjRRMN.png"
+    },
+    {
+      "questionText": "See this slice of campaign map, which two commanders fight this scrap?  https://i.imgur.com/5lrZVJ6.png",
+      "answers": [
+        {
+          "answerText": "Sami",
+          "correct": true
+        },
+        {
+          "answerText": "Drake",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 38,
+      "NumberedQuestionText": "[38] See this slice of campaign map, which two commanders fight this scrap?  https://i.imgur.com/5lrZVJ6.png"
+    },
+    {
+      "questionText": "This base's placement's rather lame, which map is this?  **Exact name**!  https://i.imgur.com/PRuwgJ6.png",
+      "answers": [
+        {
+          "answerText": "Kanbei's Error?",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 39,
+      "NumberedQuestionText": "[39] This base's placement's rather lame, which map is this?  **Exact name**!  https://i.imgur.com/PRuwgJ6.png"
+    },
+    {
+      "questionText": "A form of wordplay in its prime: which Dual Strike mission name...rhymes?",
+      "answers": [
+        {
+          "answerText": "Muck Amok",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 40,
+      "NumberedQuestionText": "[40] A form of wordplay in its prime: which Dual Strike mission name...rhymes?"
     }
   ]
 }

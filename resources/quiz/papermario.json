@@ -1,0 +1,23 @@
+{
+  "title": "The Paper Mario Paper Quiz",
+  "description": "",
+  "subject": "Paper Mario",
+  "questions": [
+    {
+      "questionText": "Question 1",
+      "answers": [
+        {
+          "answerText": "Unnamed Answer",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 1,
+      "NumberedQuestionText": "[1] Question 1"
+    }
+  ]
+}

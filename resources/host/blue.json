@@ -1,0 +1,88 @@
+{
+  "name": "Blue",
+  "description": "A snide and energetic rival.",
+  "imagePath": "https://i.imgur.com/ie6PAEs.png",
+  "intro": null,
+  "congrats": null,
+  "close": null,
+  "responses": {
+    "intro": [
+      "Yo!  Guys!  Looks like you're starting a quiz...%QUIZ, huh?  Gramps would be a better pick for a quiz, but you're stuck with me today!  I wouldn't have any trouble with these questions, but you guys?  Well...good luck!"
+    ],
+    "join": [
+      "What kept you %PLAYER?  Whatever, hurry up!  We gotta get this thing started!",
+      "Hey!  %PLAYER!  I didn't expect you to join!",
+      "%PLAYER, huh?  Try to keep up!"
+    ],
+    "question": [
+      "Heh...let's see if you can do this question.",
+      "Bet you can't get this one right, %WINNER!",
+      "Ha!  This one's easy.",
+      "Heh...you guys are gonna have so much trouble with this.",
+      "I'll take...this one!",
+      "I'm not saying you're not gonna get this, %LOSER, but..."
+    ],
+    "answers": [
+      "You guys look like you need a little help.",
+      "It's not obvious?  Well, it's gotta be one of these.",
+      "Here, %LOSER.  It's one of these.  Pick one."
+    ],
+    "correct": [
+      "Huh...%PLAYER actually got that one?",
+      "How'd you know that, %PLAYER?",
+      "No way!  %PLAYER...is that right?  That can't be right!  Argh!",
+      "Check that out: %PLAYER got it right.  For once.",
+      "Okay, %PLAYER.  You got that one.  But the next one..."
+    ],
+    "timeout": [
+      "You snooze, you lose!",
+      "Out of time-smell ya later!",
+      "I hate to say it...but you didn't get this question.",
+      "Sorry, pal, you're out of time.",
+      "1 point to Blue Oak!"
+    ],
+    "tally": [
+      "Let's see how you losers are doing.",
+      "Hey, somebody actually got points!",
+      "If I got to participate, I'd be at the top of this thing.",
+      "Here-let's see how many points you've gotten."
+    ],
+    "points": [
+      "%WINNER's in front with %POINTS points!",
+      "%PLAYER somehow got %POINTS points!",
+      "%PLAYER...yeah, %POINTS points.  Eh.",
+      "%PLAYER's got...uh...%POINTS points.  Yeah.",
+      "Am I reading this right?  %LOSER has...%POINTS points?  Hahaha!"
+    ],
+    "hurryup": [
+      "Wow, you guys still haven't gotten it yet?",
+      "Hurry up!  I haven't got all day.",
+      "C'mon, this one's easy!",
+      "%TIME left-step it up!"
+    ],
+    "kick": [
+      "Smell ya later, %PLAYER!"
+    ],
+    "comment": [
+      "Hey, has anyone seen my Raticate around?  I can't find the little guy.",
+      "Don't get too cocky, %WINNER, you can still mess up.",
+      "I can't remember...my name.  Huh.  Anyone remember?  How did I forget that!",
+      "Anyone ever feel like they're supposed to be capitalizing PROPER NOUNS?  No?  It's just ME?"
+    ],
+    "pause": [
+      "I bet you guys are getting tired from thinking so hard-let's take a break.",
+      "Break time!  Can't use those neurons forever, right?"
+    ],
+    "resume": [
+      "Bonjour!  Get ready, messieurs!",
+      "We're back!"
+    ],
+    "congrats": [
+      "I don't know how this happened, but...%WINNER won.  Huh.",
+      "%WINNER got the most points.  A fluke, I bet."
+    ],
+    "close": [
+      "Hey guys, I know you'd like me to stick around forever, but there's only so much Blue to go around, right?  Quiz over!"
+    ]
+  }
+}

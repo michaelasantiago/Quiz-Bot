@@ -1,0 +1,1035 @@
+{
+  "title": "Pokemon Quiz",
+  "description": "A Pokemon Quiz with an emphasis on moves and types, though other question subjects are mixed in.",
+  "subject": "Pokemon - Moves and Types",
+  "questions": [
+    {
+      "questionText": "Name two fully-evolved psuedo-legendaries that are not Dragon-type.",
+      "answers": [
+        {
+          "answerText": "Metagross",
+          "correct": true
+        },
+        {
+          "answerText": "Tyranitar",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 1,
+      "NumberedQuestionText": "[1] Name two fully-evolved psuedo-legendaries that are not Dragon-type."
+    },
+    {
+      "questionText": "Which is the first Grass/Flying Pokemon in the National Pokedex?",
+      "answers": [
+        {
+          "answerText": "Hoppip",
+          "correct": true
+        },
+        {
+          "answerText": "Tropius",
+          "correct": false
+        },
+        {
+          "answerText": "Tangela",
+          "correct": false
+        },
+        {
+          "answerText": "Victreebel",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 2,
+      "NumberedQuestionText": "[2] Which is the first Grass/Flying Pokemon in the National Pokedex?"
+    },
+    {
+      "questionText": "What is the highest-base-power Poison-type move in Generation 4?",
+      "answers": [
+        {
+          "answerText": "Gunk Shot",
+          "correct": true
+        },
+        {
+          "answerText": "Sludge Bomb",
+          "correct": false
+        },
+        {
+          "answerText": "Venoshock",
+          "correct": false
+        },
+        {
+          "answerText": "Poison Tail",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 3,
+      "NumberedQuestionText": "[3] What is the highest-base-power Poison-type move in Generation 4?"
+    },
+    {
+      "questionText": "Which move does the exact opposite of its description?",
+      "answers": [
+        {
+          "answerText": "Focus Energy",
+          "correct": true
+        },
+        {
+          "answerText": "Belly Drum",
+          "correct": false
+        },
+        {
+          "answerText": "Extremespeed",
+          "correct": false
+        },
+        {
+          "answerText": "Swift",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 4,
+      "NumberedQuestionText": "[4] Which move does the exact opposite of its description?"
+    },
+    {
+      "questionText": "After the Paras family, which is the first Pokemon in the National Pokedex to naturally learn Spore?",
+      "answers": [
+        {
+          "answerText": "Shroomish",
+          "correct": true
+        },
+        {
+          "answerText": "Foongus",
+          "correct": false
+        },
+        {
+          "answerText": "Vileplume",
+          "correct": false
+        },
+        {
+          "answerText": "Tangela",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 5,
+      "NumberedQuestionText": "[5] After the Paras family, which is the first Pokemon in the National Pokedex to naturally learn Spore?"
+    },
+    {
+      "questionText": "What is the first Starter Pokemon in the National Pokedex to evolve at Level 18?",
+      "answers": [
+        {
+          "answerText": "Chikorita",
+          "correct": true
+        },
+        {
+          "answerText": "Mudkip",
+          "correct": false
+        },
+        {
+          "answerText": "Squirtle",
+          "correct": false
+        },
+        {
+          "answerText": "Torchic",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 6,
+      "NumberedQuestionText": "[6] What is the first Starter Pokemon in the National Pokedex to evolve at Level 18?"
+    },
+    {
+      "questionText": "Which type(s) are immune to a status ailment?",
+      "answers": [
+        {
+          "answerText": "Steel",
+          "correct": true
+        },
+        {
+          "answerText": "Poison",
+          "correct": true
+        },
+        {
+          "answerText": "Fire",
+          "correct": true
+        },
+        {
+          "answerText": "Ice",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 4,
+      "number": 7,
+      "NumberedQuestionText": "[7] Which type(s) are immune to a status ailment?"
+    },
+    {
+      "questionText": "Which move shares a name with its type?",
+      "answers": [
+        {
+          "answerText": "Psychic",
+          "correct": true
+        },
+        {
+          "answerText": "???",
+          "correct": false
+        },
+        {
+          "answerText": "Fire",
+          "correct": false
+        },
+        {
+          "answerText": "Rock",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 8,
+      "NumberedQuestionText": "[8] Which move shares a name with its type?"
+    },
+    {
+      "questionText": "Which type(s) are super-effective on a Ghost/Dark type Pokemon?",
+      "answers": [
+        {
+          "answerText": "Fairy",
+          "correct": true
+        },
+        {
+          "answerText": "Ghost",
+          "correct": false
+        },
+        {
+          "answerText": "Dark",
+          "correct": false
+        },
+        {
+          "answerText": "Bug",
+          "correct": false
+        },
+        {
+          "answerText": "Fighting",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 9,
+      "NumberedQuestionText": "[9] Which type(s) are super-effective on a Ghost/Dark type Pokemon?"
+    },
+    {
+      "questionText": "Between Generations 2 and 6, which type(s) hit Magneton for 1x damage?",
+      "answers": [
+        {
+          "answerText": "Water",
+          "correct": true
+        },
+        {
+          "answerText": "Dragon",
+          "correct": false
+        },
+        {
+          "answerText": "Rock",
+          "correct": false
+        },
+        {
+          "answerText": "Ghost",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 10,
+      "NumberedQuestionText": "[10] Between Generations 2 and 6, which type(s) hit Magneton for 1x damage?"
+    },
+    {
+      "questionText": "Name a Pokemon from Generation 2 that has Levitate as its ability.",
+      "answers": [
+        {
+          "answerText": "Unown",
+          "correct": true
+        },
+        {
+          "answerText": "Misdreavus",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 11,
+      "NumberedQuestionText": "[11] Name a Pokemon from Generation 2 that has Levitate as its ability."
+    },
+    {
+      "questionText": "Name three types that Steel-type attacks do half damage against.",
+      "answers": [
+        {
+          "answerText": "Electric",
+          "correct": true
+        },
+        {
+          "answerText": "Fire",
+          "correct": true
+        },
+        {
+          "answerText": "Steel",
+          "correct": true
+        },
+        {
+          "answerText": "Water",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 12,
+      "NumberedQuestionText": "[12] Name three types that Steel-type attacks do half damage against."
+    },
+    {
+      "questionText": "Which Dragon-type Gym Leader can be the 7th Gym Leader in the game?",
+      "answers": [
+        {
+          "answerText": "Drayden",
+          "correct": true
+        },
+        {
+          "answerText": "Iris",
+          "correct": false
+        },
+        {
+          "answerText": "Claire",
+          "correct": false
+        },
+        {
+          "answerText": "Pryce",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 13,
+      "NumberedQuestionText": "[13] Which Dragon-type Gym Leader can be the 7th Gym Leader in the game?"
+    },
+    {
+      "questionText": "Which character is described as \"American\"?",
+      "answers": [
+        {
+          "answerText": "Lt Surge",
+          "correct": true
+        },
+        {
+          "answerText": "Lt. Surge",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 14,
+      "NumberedQuestionText": "[14] Which character is described as \"American\"?"
+    },
+    {
+      "questionText": "Which two Gym Leaders do not immediately provide a Badge after being defeated in their Gym?",
+      "answers": [
+        {
+          "answerText": "Whitney",
+          "correct": true
+        },
+        {
+          "answerText": "Claire",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 15,
+      "NumberedQuestionText": "[15] Which two Gym Leaders do not immediately provide a Badge after being defeated in their Gym?"
+    },
+    {
+      "questionText": "Which move was exclusive to Kangaskhan in Generation 1?",
+      "answers": [
+        {
+          "answerText": "Dizzy Punch",
+          "correct": true
+        },
+        {
+          "answerText": "Skull Bash",
+          "correct": false
+        },
+        {
+          "answerText": "Mega Punch",
+          "correct": false
+        },
+        {
+          "answerText": "Substitute",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 16,
+      "NumberedQuestionText": "[16] Which move was exclusive to Kangaskhan in Generation 1?"
+    },
+    {
+      "questionText": "Which Psychic-type move reduces accuracy?",
+      "answers": [
+        {
+          "answerText": "Kinesis",
+          "correct": true
+        },
+        {
+          "answerText": "Psywave",
+          "correct": false
+        },
+        {
+          "answerText": "Flash",
+          "correct": false
+        },
+        {
+          "answerText": "Extrasensory",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 17,
+      "NumberedQuestionText": "[17] Which Psychic-type move reduces accuracy?"
+    },
+    {
+      "questionText": "What type is Agility?",
+      "answers": [
+        {
+          "answerText": "Psychic",
+          "correct": true
+        },
+        {
+          "answerText": "Normal",
+          "correct": false
+        },
+        {
+          "answerText": "Electric",
+          "correct": false
+        },
+        {
+          "answerText": "???",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 18,
+      "NumberedQuestionText": "[18] What type is Agility?"
+    },
+    {
+      "questionText": "Name two non-stat-boosting moves that will halve the damage of Fire-type attacks without directly affecting any Pokemon's stats, prior to Generation 4.",
+      "answers": [
+        {
+          "answerText": "Water Sport",
+          "correct": true
+        },
+        {
+          "answerText": "Rain Dance",
+          "correct": true
+        },
+        {
+          "answerText": "Light Screen",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 19,
+      "NumberedQuestionText": "[19] Name two non-stat-boosting moves that will halve the damage of Fire-type attacks without directly affecting any Pokemon's stats, prior to Generation 4."
+    },
+    {
+      "questionText": "Which Pokemon is guaranteed to always have 1 in a stat?",
+      "answers": [
+        {
+          "answerText": "Shedinja",
+          "correct": true
+        },
+        {
+          "answerText": "Ditto",
+          "correct": false
+        },
+        {
+          "answerText": "Magikarp",
+          "correct": false
+        },
+        {
+          "answerText": "Feebas",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 20,
+      "NumberedQuestionText": "[20] Which Pokemon is guaranteed to always have 1 in a stat?"
+    },
+    {
+      "questionText": "Name a move learned by Torchic but not Combusken.",
+      "answers": [
+        {
+          "answerText": "Fire Spin",
+          "correct": true
+        },
+        {
+          "answerText": "Flamethrower",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 21,
+      "NumberedQuestionText": "[21] Name a move learned by Torchic but not Combusken."
+    },
+    {
+      "questionText": "Which two moves do damage equivalent to the user's level?",
+      "answers": [
+        {
+          "answerText": "Seismic Toss",
+          "correct": true
+        },
+        {
+          "answerText": "Night Shade",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 22,
+      "NumberedQuestionText": "[22] Which two moves do damage equivalent to the user's level?"
+    },
+    {
+      "questionText": "In Generation 4, which Pokemon is vulnerable to super-effective damage from only one of two possible types, depending on its ability?",
+      "answers": [
+        {
+          "answerText": "Bronzor",
+          "correct": true
+        },
+        {
+          "answerText": "Bronzong",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 23,
+      "NumberedQuestionText": "[23] In Generation 4, which Pokemon is vulnerable to super-effective damage from only one of two possible types, depending on its ability?"
+    },
+    {
+      "questionText": "Name a Baby Pokemon that is a pre-evolution of a Hoenn Pokemon.",
+      "answers": [
+        {
+          "answerText": "Budew",
+          "correct": true
+        },
+        {
+          "answerText": "Chingling",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 24,
+      "NumberedQuestionText": "[24] Name a Baby Pokemon that is a pre-evolution of a Hoenn Pokemon."
+    },
+    {
+      "questionText": "Which Pokemon gained an evolution in Generation 2 and a pre-evolution in Generation 4?",
+      "answers": [
+        {
+          "answerText": "Chansey",
+          "correct": true
+        },
+        {
+          "answerText": "Sudowoodo",
+          "correct": false
+        },
+        {
+          "answerText": "Snorlax",
+          "correct": false
+        },
+        {
+          "answerText": "Electabuzz",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 25,
+      "NumberedQuestionText": "[25] Which Pokemon gained an evolution in Generation 2 and a pre-evolution in Generation 4?"
+    },
+    {
+      "questionText": "At what level do you receive Fossil Pokemon in Generation 1?",
+      "answers": [
+        {
+          "answerText": "30",
+          "correct": true
+        },
+        {
+          "answerText": "20",
+          "correct": false
+        },
+        {
+          "answerText": "10",
+          "correct": false
+        },
+        {
+          "answerText": "5",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 26,
+      "NumberedQuestionText": "[26] At what level do you receive Fossil Pokemon in Generation 1?"
+    },
+    {
+      "questionText": "Which Fossil Pokemon is part-Bug?",
+      "answers": [
+        {
+          "answerText": "Anorith",
+          "correct": true
+        },
+        {
+          "answerText": "Armaldo",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 27,
+      "NumberedQuestionText": "[27] Which Fossil Pokemon is part-Bug?"
+    },
+    {
+      "questionText": "Which Berry cures Freeze (and only Freeze) in Generation 3?",
+      "answers": [
+        {
+          "answerText": "Aspear",
+          "correct": true
+        },
+        {
+          "answerText": "Rawst",
+          "correct": false
+        },
+        {
+          "answerText": "Bluk",
+          "correct": false
+        },
+        {
+          "answerText": "Cornn",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 28,
+      "NumberedQuestionText": "[28] Which Berry cures Freeze (and only Freeze) in Generation 3?"
+    },
+    {
+      "questionText": "Which HM move has the highest base power?",
+      "answers": [
+        {
+          "answerText": "Surf",
+          "correct": true
+        },
+        {
+          "answerText": "Fly",
+          "correct": false
+        },
+        {
+          "answerText": "Strength",
+          "correct": false
+        },
+        {
+          "answerText": "Rock Climb",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 29,
+      "NumberedQuestionText": "[29] Which HM move has the highest base power?"
+    },
+    {
+      "questionText": "Which HM moves affect hit chance?",
+      "answers": [
+        {
+          "answerText": "Flash",
+          "correct": true
+        },
+        {
+          "answerText": "Defog",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 30,
+      "NumberedQuestionText": "[30] Which HM moves affect hit chance?"
+    },
+    {
+      "questionText": "Which type had **all** of its damaging moves changed by the Physical/Special split?",
+      "answers": [
+        {
+          "answerText": "Dark",
+          "correct": true
+        },
+        {
+          "answerText": "Ghost",
+          "correct": false
+        },
+        {
+          "answerText": "Dragon",
+          "correct": false
+        },
+        {
+          "answerText": "Poison",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 31,
+      "NumberedQuestionText": "[31] Which type had **all** of its damaging moves changed by the Physical/Special split?"
+    },
+    {
+      "questionText": "Which Bug-type move has the highest base power in Generation 4?",
+      "answers": [
+        {
+          "answerText": "Megahorn",
+          "correct": true
+        },
+        {
+          "answerText": "Bug Buzz",
+          "correct": false
+        },
+        {
+          "answerText": "X-Scissor",
+          "correct": false
+        },
+        {
+          "answerText": "Leech Life",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 32,
+      "NumberedQuestionText": "[32] Which Bug-type move has the highest base power in Generation 4?"
+    },
+    {
+      "questionText": "Name two unevolved Pokemon that can learn Spider Web.",
+      "answers": [
+        {
+          "answerText": "Spinarak",
+          "correct": true
+        },
+        {
+          "answerText": "Joltik",
+          "correct": true
+        },
+        {
+          "answerText": "Dewpider",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 33,
+      "NumberedQuestionText": "[33] Name two unevolved Pokemon that can learn Spider Web."
+    },
+    {
+      "questionText": "Name three of the four Pokemon that can be interpreted as \"The First Pokemon\".",
+      "answers": [
+        {
+          "answerText": "Rhydon",
+          "correct": true
+        },
+        {
+          "answerText": "Bulbasaur",
+          "correct": true
+        },
+        {
+          "answerText": "Mew",
+          "correct": true
+        },
+        {
+          "answerText": "Arceus",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 34,
+      "NumberedQuestionText": "[34] Name three of the four Pokemon that can be interpreted as \"The First Pokemon\"."
+    },
+    {
+      "questionText": "What is Ledian's highest stat?",
+      "answers": [
+        {
+          "answerText": "Sp. Defense",
+          "correct": true
+        },
+        {
+          "answerText": "Sp Defense",
+          "correct": true
+        },
+        {
+          "answerText": "Special Defense",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 35,
+      "NumberedQuestionText": "[35] What is Ledian's highest stat?"
+    },
+    {
+      "questionText": "Name two Grass/Fighting type Pokemon.",
+      "answers": [
+        {
+          "answerText": "Breloom",
+          "correct": true
+        },
+        {
+          "answerText": "Chesnaught",
+          "correct": true
+        },
+        {
+          "answerText": "Virizion",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 36,
+      "NumberedQuestionText": "[36] Name two Grass/Fighting type Pokemon."
+    },
+    {
+      "questionText": "Who created the Master Ball?",
+      "answers": [
+        {
+          "answerText": "Silph Co",
+          "correct": true
+        },
+        {
+          "answerText": "Kurt",
+          "correct": false
+        },
+        {
+          "answerText": "Lance",
+          "correct": false
+        },
+        {
+          "answerText": "Team Rocket",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 37,
+      "NumberedQuestionText": "[37] Who created the Master Ball?"
+    },
+    {
+      "questionText": "What kind of Ball are Green Apricorns made into?",
+      "answers": [
+        {
+          "answerText": "Friend Ball",
+          "correct": true
+        },
+        {
+          "answerText": "Level Ball",
+          "correct": false
+        },
+        {
+          "answerText": "Moon Ball",
+          "correct": false
+        },
+        {
+          "answerText": "Fast Ball",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 38,
+      "NumberedQuestionText": "[38] What kind of Ball are Green Apricorns made into?"
+    },
+    {
+      "questionText": "Which Pokemon is used by N in his first battle in Black and White?",
+      "answers": [
+        {
+          "answerText": "Purrloin",
+          "correct": true
+        },
+        {
+          "answerText": "Lillipup",
+          "correct": false
+        },
+        {
+          "answerText": "Pidove",
+          "correct": false
+        },
+        {
+          "answerText": "Zorua",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 39,
+      "NumberedQuestionText": "[39] Which Pokemon is used by N in his first battle in Black and White?"
+    },
+    {
+      "questionText": "Which move is exclusive to Exeggutor, Sudowoodo, Torterra, Snover, and Abomasnow in Generation 4?",
+      "answers": [
+        {
+          "answerText": "Wood Hammer",
+          "correct": true
+        },
+        {
+          "answerText": "Trunk Smash",
+          "correct": false
+        },
+        {
+          "answerText": "Bark Buster",
+          "correct": false
+        },
+        {
+          "answerText": "Tombstoner",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 40,
+      "NumberedQuestionText": "[40] Which move is exclusive to Exeggutor, Sudowoodo, Torterra, Snover, and Abomasnow in Generation 4?"
+    }
+  ]
+}

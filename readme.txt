@@ -23,6 +23,8 @@ Bot Config [config.json]
 token:          Discord's private key for the bot.
 botAdmin:       Administrator for this bot (not related to channel administrator)
 prefix:         The prefix that must follow all bot commands.
+quizPrefix:     Prefix to place before answers in a quiz.
+                If set to "", all messages will be read for answers.
 defaultChannel: The default channel that the bot outputs to.  Greets this channel upon logging in.
 stdAvatar:      The standard avatar for the bot.
 quizPath:       The directory where Quizzes are held.
@@ -32,8 +34,6 @@ allCaps:        Whether the bot auto-capitalizes all of its output text
 Quiz Config [quizconfig.json]
 (All times are in seconds)
 defaultHost:        Host loaded on bot startup
-prefix:             Prefix to place before answers in a quiz.
-                    If set to "", all messages will be read for answers.
 signUpDuration:     Period in which users can sign up for a quiz.
                     Will be infinite (requiring manual starting)
 questionDelay:      Time between questions in the quiz.

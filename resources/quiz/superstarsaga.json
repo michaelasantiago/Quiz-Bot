@@ -1,0 +1,647 @@
+{
+  "title": "Mario & Luigi: Superstar Saga Quiz",
+  "description": "",
+  "subject": "Mario & Luigi: Superstar Saga",
+  "questions": [
+    {
+      "questionText": "Which attack is capable of sequence-breaking the pattern in the Queen Bean fight?",
+      "answers": [
+        {
+          "answerText": "Splash Bros Adv",
+          "correct": true
+        },
+        {
+          "answerText": "Bounce Bros",
+          "correct": false
+        },
+        {
+          "answerText": "Knockback Bros",
+          "correct": false
+        },
+        {
+          "answerText": "Cyclone Bros Adv",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 1,
+      "NumberedQuestionText": "[1] Which attack is capable of sequence-breaking the pattern in the Queen Bean fight?"
+    },
+    {
+      "questionText": "What are the names of the Hammerhead Bros.?",
+      "answers": [
+        {
+          "answerText": "Sledge",
+          "correct": true
+        },
+        {
+          "answerText": "Mallet",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 2,
+      "NumberedQuestionText": "[2] What are the names of the Hammerhead Bros.?"
+    },
+    {
+      "questionText": "Which Bros Attacks can loop indefinitely?",
+      "answers": [
+        {
+          "answerText": "Knockback Bros",
+          "correct": true
+        },
+        {
+          "answerText": "Chopper Bros",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 3,
+      "NumberedQuestionText": "[3] Which Bros Attacks can loop indefinitely?"
+    },
+    {
+      "questionText": "Where does Hermie III live?",
+      "answers": [
+        {
+          "answerText": "Gwarhar Lagoon",
+          "correct": true
+        },
+        {
+          "answerText": "Oho Oasis",
+          "correct": false
+        },
+        {
+          "answerText": "Oho Ocean",
+          "correct": false
+        },
+        {
+          "answerText": "Joke's End",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 4,
+      "NumberedQuestionText": "[4] Where does Hermie III live?"
+    },
+    {
+      "questionText": "Which condiment does Fawful compare the brothers' demise to?",
+      "answers": [
+        {
+          "answerText": "Mustard",
+          "correct": true
+        },
+        {
+          "answerText": "Ketchup",
+          "correct": false
+        },
+        {
+          "answerText": "Relish",
+          "correct": false
+        },
+        {
+          "answerText": "Pineapple",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 5,
+      "NumberedQuestionText": "[5] Which condiment does Fawful compare the brothers' demise to?"
+    },
+    {
+      "questionText": "Fill in the blank:  \"Have you `_____` for this?!?\"",
+      "answers": [
+        {
+          "answerText": "readiness",
+          "correct": true
+        },
+        {
+          "answerText": "expectation",
+          "correct": false
+        },
+        {
+          "answerText": "delight",
+          "correct": false
+        },
+        {
+          "answerText": "shock",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 6,
+      "NumberedQuestionText": "[6] Fill in the blank:  \"Have you `_____` for this?!?\""
+    },
+    {
+      "questionText": "Name three types of collectible Bean (you can omit the word \"Bean\" from the names).",
+      "answers": [
+        {
+          "answerText": "Woo",
+          "correct": true
+        },
+        {
+          "answerText": "Hoo",
+          "correct": true
+        },
+        {
+          "answerText": "Chuckle",
+          "correct": true
+        },
+        {
+          "answerText": "Hee",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 3,
+      "number": 7,
+      "NumberedQuestionText": "[7] Name three types of collectible Bean (you can omit the word \"Bean\" from the names)."
+    },
+    {
+      "questionText": "Which character appears in the Star 'Stache Smash minigame?",
+      "answers": [
+        {
+          "answerText": "Geno",
+          "correct": true
+        },
+        {
+          "answerText": "Toadsworth",
+          "correct": false
+        },
+        {
+          "answerText": "Chuck Quizmo",
+          "correct": false
+        },
+        {
+          "answerText": "Kamek",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 8,
+      "NumberedQuestionText": "[8] Which character appears in the Star 'Stache Smash minigame?"
+    },
+    {
+      "questionText": "What are Mario & Luigi's hammers forged from?",
+      "answers": [
+        {
+          "answerText": "Hoohoo Block",
+          "correct": true
+        },
+        {
+          "answerText": "Beanstone",
+          "correct": false
+        },
+        {
+          "answerText": "Star Ore",
+          "correct": false
+        },
+        {
+          "answerText": "Steel",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 9,
+      "NumberedQuestionText": "[9] What are Mario & Luigi's hammers forged from?"
+    },
+    {
+      "questionText": "What is produced in le Chateau de Chucklehuck?",
+      "answers": [
+        {
+          "answerText": "Chuckola Cola",
+          "correct": true
+        },
+        {
+          "answerText": "Super Boots",
+          "correct": false
+        },
+        {
+          "answerText": "Belly Blech Worms",
+          "correct": false
+        },
+        {
+          "answerText": "Hand Massages",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 10,
+      "NumberedQuestionText": "[10] What is produced in le Chateau de Chucklehuck?"
+    },
+    {
+      "questionText": "What are the two optional Bros Attacks?",
+      "answers": [
+        {
+          "answerText": "Throw Bros",
+          "correct": true
+        },
+        {
+          "answerText": "Cyclone Bros",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 11,
+      "NumberedQuestionText": "[11] What are the two optional Bros Attacks?"
+    },
+    {
+      "questionText": "What is the first enemy encountered in the game?",
+      "answers": [
+        {
+          "answerText": "Bowser",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 12,
+      "NumberedQuestionText": "[12] What is the first enemy encountered in the game?"
+    },
+    {
+      "questionText": "Fill in the blank: “My new country has no need for old `______`! It will do just fine with only one: the Great Bowletta!!!”",
+      "answers": [
+        {
+          "answerText": "superstars",
+          "correct": true
+        },
+        {
+          "answerText": "nincompoops",
+          "correct": false
+        },
+        {
+          "answerText": "fools",
+          "correct": false
+        },
+        {
+          "answerText": "heroes",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 13,
+      "NumberedQuestionText": "[13] Fill in the blank: “My new country has no need for old `______`! It will do just fine with only one: the Great Bowletta!!!”"
+    },
+    {
+      "questionText": "What is Popple's self-ascribed title?",
+      "answers": [
+        {
+          "answerText": "Shadow Thief",
+          "correct": true
+        },
+        {
+          "answerText": "Phantom Thief",
+          "correct": false
+        },
+        {
+          "answerText": "Dashing Rogue",
+          "correct": false
+        },
+        {
+          "answerText": "Slick Rogue",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 14,
+      "NumberedQuestionText": "[14] What is Popple's self-ascribed title?"
+    },
+    {
+      "questionText": "Who is the artist that develops the \"Splart\" technique to make fashionable clothing?",
+      "answers": [
+        {
+          "answerText": "Harhall",
+          "correct": true
+        },
+        {
+          "answerText": "Piantissimo",
+          "correct": false
+        },
+        {
+          "answerText": "Bubbles",
+          "correct": false
+        },
+        {
+          "answerText": "Hermie III",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 15,
+      "NumberedQuestionText": "[15] Who is the artist that develops the \"Splart\" technique to make fashionable clothing?"
+    },
+    {
+      "questionText": "Which Badge has an effect that scales with the quantity of an item type in the player's inventory?",
+      "answers": [
+        {
+          "answerText": "Mush Badge",
+          "correct": true
+        },
+        {
+          "answerText": "Pea Badge",
+          "correct": false
+        },
+        {
+          "answerText": "Soulful Bros",
+          "correct": false
+        },
+        {
+          "answerText": "Wonder Badge",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 16,
+      "NumberedQuestionText": "[16] Which Badge has an effect that scales with the quantity of an item type in the player's inventory?"
+    },
+    {
+      "questionText": "Which two items can be consumed in-battle to boost Mario and Luigi's stats?",
+      "answers": [
+        {
+          "answerText": "Red Pepper",
+          "correct": true
+        },
+        {
+          "answerText": "Green Pepper",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 2,
+      "number": 17,
+      "NumberedQuestionText": "[17] Which two items can be consumed in-battle to boost Mario and Luigi's stats?"
+    },
+    {
+      "questionText": "Which enemy type has a chance of revealing a Gold Beanie after taking damage?",
+      "answers": [
+        {
+          "answerText": "Pestnut",
+          "correct": true
+        },
+        {
+          "answerText": "Parabeanie",
+          "correct": false
+        },
+        {
+          "answerText": "Oucher Glass",
+          "correct": false
+        },
+        {
+          "answerText": "Sharpea",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 18,
+      "NumberedQuestionText": "[18] Which enemy type has a chance of revealing a Gold Beanie after taking damage?"
+    },
+    {
+      "questionText": "Name one enemy type that contains \"Mecha-\" in its name.",
+      "answers": [
+        {
+          "answerText": "Mecha-Chomp",
+          "correct": true
+        },
+        {
+          "answerText": "Mecha-Blooper",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 19,
+      "NumberedQuestionText": "[19] Name one enemy type that contains \"Mecha-\" in its name."
+    },
+    {
+      "questionText": "Which herb cures Bean Fever?",
+      "answers": [
+        {
+          "answerText": "Crabbie Grass",
+          "correct": true
+        },
+        {
+          "answerText": "Guffawha Leaf",
+          "correct": false
+        },
+        {
+          "answerText": "Teehee Shrub",
+          "correct": false
+        },
+        {
+          "answerText": "Subcon Flower",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 20,
+      "NumberedQuestionText": "[20] Which herb cures Bean Fever?"
+    },
+    {
+      "questionText": "Where does the Princess Peach escort mission take place?",
+      "answers": [
+        {
+          "answerText": "Teehee Valley",
+          "correct": true
+        },
+        {
+          "answerText": "Joke's End",
+          "correct": false
+        },
+        {
+          "answerText": "Bowser's Castle",
+          "correct": false
+        },
+        {
+          "answerText": "Woohoo Hooniversity",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 21,
+      "NumberedQuestionText": "[21] Where does the Princess Peach escort mission take place?"
+    },
+    {
+      "questionText": "Who is the last character holding onto the Beanstar before it shatters?",
+      "answers": [
+        {
+          "answerText": "Bowser",
+          "correct": true
+        },
+        {
+          "answerText": "Rookie",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 22,
+      "NumberedQuestionText": "[22] Who is the last character holding onto the Beanstar before it shatters?"
+    },
+    {
+      "questionText": "Whose voice is stolen at the beginning of the game?",
+      "answers": [
+        {
+          "answerText": "Birdo",
+          "correct": true
+        },
+        {
+          "answerText": "Princess Peach",
+          "correct": false
+        },
+        {
+          "answerText": "Toadsworth",
+          "correct": false
+        },
+        {
+          "answerText": "Queen Bean",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 23,
+      "NumberedQuestionText": "[23] Whose voice is stolen at the beginning of the game?"
+    },
+    {
+      "questionText": "What are the four vocalizations Mario makes when selecting moves in the overworld?",
+      "answers": [
+        {
+          "answerText": "Jump",
+          "correct": true
+        },
+        {
+          "answerText": "Hammer",
+          "correct": true
+        },
+        {
+          "answerText": "Spin",
+          "correct": true
+        },
+        {
+          "answerText": "Fire",
+          "correct": true
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 4,
+      "number": 24,
+      "NumberedQuestionText": "[24] What are the four vocalizations Mario makes when selecting moves in the overworld?"
+    },
+    {
+      "questionText": "Which character does Cackletta disguise as in the first third of the game?",
+      "answers": [
+        {
+          "answerText": "Lady Lima",
+          "correct": true
+        },
+        {
+          "answerText": "Queen Bean",
+          "correct": false
+        },
+        {
+          "answerText": "Prince Peasley",
+          "correct": false
+        },
+        {
+          "answerText": "Princess Pea",
+          "correct": false
+        }
+      ],
+      "link": "",
+      "wordy": false,
+      "musicPath": "",
+      "points": 1,
+      "requiredAnswers": 1,
+      "number": 25,
+      "NumberedQuestionText": "[25] Which character does Cackletta disguise as in the first third of the game?"
+    }
+  ]
+}
