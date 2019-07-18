@@ -5,6 +5,8 @@ This bot uses
 
 Admin commands
 resetAvatar         Resets the bot's avatar to the default
+poweroff            Turns off the bot
+
 
 User commands
 ping                Replies to the ping on the ping's channel
@@ -62,6 +64,8 @@ Keys:
 [%ADMIN]:       Current bot administrator
 [%TIMER]:       Timer time, in seconds.
 [%QUIZ]:        Quiz name.
+[%VAR]:         Variable changed by Set
+[%VAL]:         Value set to Variable in Set
 
 greeting:       Greeting to say upon logging into a server.  Outputs to defaultChannel.
 ping:           Message to say in response to a ping command.
@@ -71,6 +75,11 @@ noAvatar:       Message to say after failing to find an avatar.
 failAvatar:     Message to say after failing to upload an avatar.
 timer:          Message to say upon starting a timer.
 timerDone:      Message to say at the end of a timer.
+setConfig:      Message to say after setting a variable via command.
+failConfig:     Message to say when a variable does not exist in the config file.
+oldConfig:      Message to say when a attempting to set a variable to its existing value
+onlyBotAdmin:   Message to say when a variable restricted to the bot administrator is attempted to be modified by someone else
+needQuiz:       Message to say when a user attempts to start a quiz without entering a quiz name
 quizActive:     Message to say when a user attempts to start a quiz while a quiz is already in progress.
 needHost:       Message to say when quiz is attempted to start without a host.
 quizFail:       Message to say after failing to start a quiz.
