@@ -1,5 +1,5 @@
 {
-	"token": "Mzc2Nzk3MDYxMDcwMzIzNzMz.Wf9Vmw.mDq5bjU-9G3CuW-8CcwsmemxDyg",
+	"token": "",
 	"prefix": "!",
 	"quizPrefix": "",
 	"botAdmin": "Magnemania#3604",
@@ -8,4 +8,4 @@
 	"quizPath": "./resources/quiz/",
 	"hostPath": "./resources/host/",
 	"allCaps": true
-}
+} 
