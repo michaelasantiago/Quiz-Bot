@@ -1,3 +1,18 @@
 
 resources/config.json
 resources/host/blue.json
+Quiz Builder/Newtonsoft.Json.dll
+Quiz Builder/Newtonsoft.Json.xml
+Quiz Builder/Quiz Builder.exe
+Quiz Builder/Quiz Builder.exe.config
+Quiz Builder/Quiz Builder.pdb
+Quiz Builder/Quiz Host Builder.exe
+resources/host/blue.json
+resources/host/merchant.json
+resources/host/blue.json
+resources/quiz/pokemongym.json
+resources/quiz/pokemonitem.json
+resources/quiz/pokemonmove.json
+resources/quiz/pokemonregion.json
+resources/quiz/pokemonvillain.json
+resources/quiz/re4.json

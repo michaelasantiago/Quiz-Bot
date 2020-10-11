@@ -7,13 +7,20 @@
     "failAvatar":   "Sorry, I can't change my avatar right now.",
     "timer":        "Starting %TIMER timer!",
     "timerDone":    "Timer done!  Time elapsed: %TIMER",
-    "quizActive":   "Cannot start quiz; there is already a quiz in progress",
+    "setConfig":    "%VAR has been set to %VAL",
+    "failConfig":   "%VAR is not a configurable variable.",
+    "oldConfig":    "%VAR is already set to %VAL",
+    "onlyBotAdmin": "Only the bot administrator can change %VAR",
+    "needQuiz":     "Please specify a quiz.",
+    "quizActive":   "Cannot start quiz; there is already a quiz in progress.",
     "needHost":     "Cannot start quiz: need to set host first.",
     "quizFail":     "Sorry, I can't start this quiz.",
     "quizNotFound": "Could not find this quiz.",
     "signUp":       "Sign up for this quiz by saying \"%PREFIXjoin\".  Quiz will begin in %TIMER.",
     "host":         "Host set to %HOST.",
+    "hostNotFound": "Could not find this host.",
     "quizStart":    "Beginning quiz now!  Allow me to introduce your host...",
     "quizEnd":      "The quiz has ended.  Resuming normal operations.",
-	"invalid":      "Invalid command."
+    "invalid":      "Invalid command.",
+    "powerOff":     "We are deactivating.  Goodbye."
 }

@@ -2,11 +2,10 @@
 	"token": "Mzc2Nzk3MDYxMDcwMzIzNzMz.XPwA8g.cvDd7haUFYbBaE0wVkAV-4KTqJk",
 	"prefix": "!",
 	"quizPrefix": "",
-	"botAdmin": "@Magnemania#3604",
+	"botAdmin": "Magnemania#3604",
 	"defaultChannel": "robit",
 	"stdAvatar": "stdavatar.png",
 	"quizPath": "./resources/quiz/",
 	"hostPath": "./resources/host/",
-	"defaultHost": "blue",
 	"allCaps": true
 }
